@@ -7,9 +7,10 @@
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "webpack && node server",
+    "start": "node server",
     "dev": "node server & webpack --watch",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "postinstall": "webpack"
   },
   "babel": {
     "presets": [
@@ -23,9 +24,6 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2"
-  },
-  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -33,6 +31,7 @@
     "babel-register": "^6.26.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.2",
     "jest": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
