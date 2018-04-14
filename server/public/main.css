@@ -46,43 +46,66 @@ body {
 
 .imgHead {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 0.5%;
+  left: 0.5%;
   margin: 0;
   padding: 0;
   background-color: orange;
   color: black;
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 50%;
   z-index: 10;
   text-align: right;
 }
 
 .imgBody {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 12%;
+  left: 12%;
   margin: 0;
   padding: 0;
   background-color: yellow;
   color: black;
-  width: 250px;
-  height: 250px;
+  width: 80%;
+  height: 80%;
   z-index: 5; 
   text-align: right;
 }
 
-    /* Larger than mobile */
-    @media (min-width: 400px) {}
-
-
     /* Larger than phablet */
-    @media (min-width: 550px) {}
+    @media (min-width: 550px) {
+      .imgContainer {
+        background-color: blue;
+        width: 350px;
+        height: 350px;
+      }
+      
+      .imgHead {
+        background-color: blueviolet;
+      }
+      
+      .imgBody {
+        background-color: pink;
+      }
+    }
 
 
     /* Larger than tablet */
-    @media (min-width: 750px) {}   
-
+    @media (min-width: 750px) {   
+      .imgContainer {
+        background-color: green;
+        width: 500px;
+        height: 500px;
+      }
+      
+      .imgHead {
+        background-color: lightgreen;
+      }
+      
+      .imgBody {
+        background-color: lightskyblue;
+      }
+    }
 
 .createStep1 {
   background-color: rgba(17, 4, 94, 0.5);
