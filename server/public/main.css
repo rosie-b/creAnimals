@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+
+.home {
+  background-color: rgba(17, 4, 94, 0.5);
+  color: white;
+}
+
+.profile {
+  background-color: rgba(17, 4, 94, 0.6);
+  color: white;
+}
+
+.createStep1 {
+  background-color: rgba(17, 4, 94, 0.7);
+  color: white;
+}
+
+.createStep2 {
+  background-color: rgba(17, 4, 94, 0.8);
+  color: white;
+}

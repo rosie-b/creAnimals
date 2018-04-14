@@ -13,9 +13,10 @@ const App = () => {
       <div>
         <h1>App TEST</h1> 
         <Route exact path = '/' component = {Home} />
-        <Route exact path = '/' component = {Profile} />
-        <Route exact path = '/' component = {CreateStep1} />
-        <Route exact path = '/' component = {CreateStep2} />
+        <Route exact path = '/creAnimals' component = {Home} />
+        <Route exact path = '/creAnimals/profile' component = {Profile} />
+        <Route exact path = '/creAnimals/create/step1' component = {CreateStep1} />
+        <Route exact path = '/creAnimals/create/step2' component = {CreateStep2} />
       </div>
     </Router>
   )
