@@ -7,7 +7,9 @@ const Profile = () => {
   return (
     <div className = 'profile'>
       <p>(Profile page TEST)</p>
-      <CreationImg />
+      <div className = 'profileImg'>
+        <CreationImg />
+      </div>
     </div>
   )
 }

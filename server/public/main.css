@@ -27,11 +27,13 @@ body {
 
 /* only show on home page/view */
 .gallery {
+  position: relative;
   background-color: rgba(17, 4, 94, 0.6);
   color: white;
 }
 
 .profile {
+  position: relative;
   background-color: rgba(17, 4, 94, 0.5);
   color: white;
   width: 90%;
@@ -40,12 +42,28 @@ body {
 }
 
 /* created animal image css for gallery, profile etc */
-.imgContainer {
+.profileImg {
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.galleryImg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0
+}
+
+.imgContainer {
+  position: absolute;
   background-color: red;
-  width: 300px;
-  height: 300px;
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .imgHead {
@@ -79,10 +97,18 @@ body {
 /* media queries for larger screens */
     /* Larger than phablet */
     @media (min-width: 550px) {
+      .profileImg {
+        width: 250px;
+        height: 250px;
+      }
+      
+      .galleryImg {
+        width: 150px;
+        height: 150px;
+      }
+
       .imgContainer {
         background-color: blue;
-        width: 350px;
-        height: 350px;
       }
       
       .imgHead {
@@ -96,11 +122,19 @@ body {
 
 
     /* Larger than tablet */
-    @media (min-width: 750px) {   
+    @media (min-width: 750px) { 
+      .profileImg {
+        width: 400px;
+        height: 400px;
+      }
+      
+      .galleryImg {
+        width: 200px;
+        height: 200px;
+      }
+
       .imgContainer {
         background-color: green;
-        width: 500px;
-        height: 500px;
       }
       
       .imgHead {
