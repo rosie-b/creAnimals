@@ -2,22 +2,94 @@ body {
   background-color: white;
 }
 
+/* show on every page/view */
+.banner {  
+  background-color: rgb(7, 2, 39);
+  color: white;
+}
+
+/* show on every page/view */
+.footer {
+  background-color: rgb(7, 2, 39);
+  color: white;
+}
+
 .home {
   background-color: rgba(17, 4, 94, 0.5);
   color: white;
 }
 
-.profile {
+/* only show on home page/view */
+.about {
   background-color: rgba(17, 4, 94, 0.6);
   color: white;
 }
 
+/* only show on home page/view */
+.gallery {
+  background-color: rgba(17, 4, 94, 0.6);
+  color: white;
+}
+
+.profile {
+  background-color: rgba(17, 4, 94, 0.5);
+  color: white;
+}
+
+/* profile image css */
+.imgContainer {
+  position: relative;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.imgHead {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  color: black;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  text-align: right;
+}
+
+.imgBody {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  color: black;
+  width: 250px;
+  height: 250px;
+  z-index: 5; 
+  text-align: right;
+}
+
+    /* Larger than mobile */
+    @media (min-width: 400px) {}
+
+
+    /* Larger than phablet */
+    @media (min-width: 550px) {}
+
+
+    /* Larger than tablet */
+    @media (min-width: 750px) {}   
+
+
 .createStep1 {
-  background-color: rgba(17, 4, 94, 0.7);
+  background-color: rgba(17, 4, 94, 0.5);
   color: white;
 }
 
 .createStep2 {
-  background-color: rgba(17, 4, 94, 0.8);
+  background-color: rgba(17, 4, 94, 0.5);
   color: white;
 }

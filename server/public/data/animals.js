@@ -1,7 +1,17 @@
 import React from 'react'
 
 // farm animal images could be useful https://www.freepik.com/free-vector/farm-elements-design_965160.htm#term=farm&page=1&position=3
+
+// <a href='https://www.freepik.com/free-vector/farm-elements-design_965160.htm'>Designed by Freepik</a>
+
+
 // zoo animal images could be useful https://www.freepik.com/free-vector/cute-zoo-animals_1585943.htm#term=cartoon%20animals%20free&page=1&position=0
+
+
+
+
+
+// <a href='https://www.freepik.com/free-vector/set-of-funny-cartoon-animals_683237.htm'>Designed by Freepik</a>
 
 const animals = [
 	{id: 1,
