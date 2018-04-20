@@ -1,6 +1,6 @@
 import React from 'react'
 
-import creanimals from '../../server/public/data/creanimals'
+// import creanimals from '../../server/public/data/creanimals'
 
 const CreationImg = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CreationImg from './CreationImg'
-import creanimals from '../../server/public/data/creanimals'
+// import creanimals from '../../server/public/data/creanimals'
 
 const Profile = () => {
   return (
