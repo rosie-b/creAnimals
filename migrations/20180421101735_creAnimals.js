@@ -1,8 +1,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('CreAnimals', function (table) {
     table.increments().primary()
-    table.integer('animal_1_id')
-    table.integer('animal_2_id')
+    table.integer('img_url_head')
+    table.integer('img_url_body')
     table.text('name')
     table.text('species')
     table.text('likes')

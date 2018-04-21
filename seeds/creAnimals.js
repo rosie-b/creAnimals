@@ -5,8 +5,8 @@ exports.seed = (knex, Promise) => {
       // Inserts seed entries
       return knex('CreAnimals').insert([
         {id: 1,
-          animal_1_id: 1,
-          animal_2_id: 2,
+          img_url_head: '../server/public/images/cat-head.png', 
+          img_url_body: '../server/public/images/dog-body.png',
           name: 'Albert',
           species: 'CatDog',
           likes: 'Long walks under the house and crapping on driveways',
@@ -16,8 +16,8 @@ exports.seed = (knex, Promise) => {
           sound_id: 1
         },
         {id: 2,
-          animal_1_id: 4,
-          animal_2_id: 5,
+          img_url_head: '../server/public/images/fox-head.png', 
+          img_url_body: '../server/public/images/mouse-body.png',
           name: 'Crack Fox',
           species: 'FoxMouse',
           likes: 'Needles',
@@ -27,8 +27,8 @@ exports.seed = (knex, Promise) => {
           sound_id: 2
         },
         {id: 3,
-          animal_1_id: 3,
-          animal_2_id: 1,
+          img_url_head: '../server/public/images/sheep-head.png', 
+          img_url_body: '../server/public/images/cat-body.png',
           name: 'Mildred',
           species: 'SheepCat',
           likes: 'Telling long and pointless stories revolving around toenails',
@@ -38,8 +38,8 @@ exports.seed = (knex, Promise) => {
           sound_id: 3
         },
         {id: 4,
-          animal_1_id: 2,
-          animal_2_id: 3,
+          img_url_head: '../server/public/images/dog-head.png', 
+          img_url_body: '../server/public/images/sheep-body.png',
           name: 'Ralph',
           species: 'DogSheep',
           likes: 'Barking orders at self in mirror',

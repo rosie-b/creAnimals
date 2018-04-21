@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CreationImg from './CreationImg'
+import CreationImg from './CreationImg'  // bringing in the image data
 
 const Gallery = () => {
   return (
