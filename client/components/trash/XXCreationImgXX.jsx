@@ -1,7 +1,5 @@
 import React from 'react'
 
-// import creanimals from '../../server/public/data/creanimals'
-
 const CreationImg = () => {
   return (
       <div className = 'imgContainer'>
