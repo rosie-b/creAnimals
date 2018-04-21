@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const Url = '/api/v1'
+const Url = '/api/v1/'
 
 // export function getAnimals (callback) {
 //   request
