@@ -62,13 +62,14 @@ export default class Home extends React.Component {
 
     if(this.state.creAnimals.length > 0){
     return (
-        <div>
+        <div className = 'gallery'>
             <DisplayImage creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
-            
+
             {showProfile
                 ? <Profile  creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
                 : <p>Want to learn about this creature?</p>
             }
+            
             <button onClick={this.toggleButton.bind(this)}>{showProfile ? "Argh! Hide please." : "Show me more!"}</button>
         </div>
     )}
@@ -93,8 +94,9 @@ export default class Home extends React.Component {
             )})}
         </ul> */}
         
+        <div className = 'galleryImg'>
         {this.handleUpdate(this.state.index)}
-        
+        </div>
 
       </div>
     )
