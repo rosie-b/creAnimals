@@ -30,32 +30,36 @@ body {
   position: relative;
   background-color: rgba(17, 4, 94, 0.6);
   color: white;
-  width: 90%;
+  width: 100%;
 }
 
 .profile {
   position: relative;
   background-color: rgba(17, 4, 94, 0.5);
   color: white;
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
   justify-content: center;
 }
 
 /* created animal image css for gallery, profile etc */
-.profileImg {
+
+/* ------- STILL NEED THIS? ------- */
+/* .profileImg {
   position: relative;
   width: 200px;
   height: 200px;
   margin: 0 auto;
   padding: 0;
-}
+} */
 
-.galleryImg {
+.displayImg {
   position: relative;
-  width: 80%;
-  margin: 0 auto;
-  padding: 0
+  height: 100px;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  align-content: center;
 }
 
 .imgContainer {
@@ -73,35 +77,56 @@ body {
   padding: 0;
   background-color: orange;
   color: black;
-  width: 50%;
-  height: 50%;
+  width: 90px;
+  height: 90px;
   z-index: 10;
   text-align: right;
 }
 
+.imgH {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
 .imgBody {
   position: absolute;
-  top: 12%;
-  left: 12%;
+  top: 10px;
+  left: 10px;
   margin: 0;
   padding: 0;
   background-color: yellow;
   color: black;
-  width: 80%;
-  height: 80%;
+  width: 90px;
+  height: 90px;
   z-index: 5; 
   text-align: right;
+}
+
+.imgB {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.btnContainer {
+  position: relative;
 }
 
 /* media queries for larger screens */
     /* Larger than phablet */
     @media (min-width: 550px) {
-      .profileImg {
+      /* ------- STILL NEED THIS? ------- */
+      /* .profileImg {
         width: 250px;
         height: 250px;
-      }
+      } */
       
-      .galleryImg {
+      .displayImg {
         width: 150px;
         height: 150px;
       }
@@ -122,12 +147,13 @@ body {
 
     /* Larger than tablet */
     @media (min-width: 750px) { 
-      .profileImg {
+      /* ------- STILL NEED THIS? ------- */
+      /* .profileImg {
         width: 400px;
         height: 400px;
-      }
+      } */
       
-      .galleryImg {
+      .displayImg {
         width: 200px;
         height: 200px;
       }
