@@ -63,16 +63,16 @@ export default class Gallery extends React.Component {
 
     if(this.state.creAnimals.length > 0){
     return (
-        <div className = 'gallery'>
-            <DisplayImage creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
+      <React.Fragment>
+        <DisplayImage creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
 
-            {showProfile
-                ? <Profile  creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
-                : <p>Want to learn about this creature?</p>
-            }
-            
-            <button onClick={this.toggleButton.bind(this)}>{showProfile ? "Argh! Hide please." : "Show me more!"}</button>
-        </div>
+        {showProfile
+            ? <Profile  creAnimal = {this.state.creAnimals[index]} nextIndex={this.nextIndex} prevIndex={this.prevIndex} />
+            : <p>Want to learn about this creature?</p>
+        }
+        
+        <button onClick={this.toggleButton.bind(this)}>{showProfile ? "Argh! Hide please." : "Show me more!"}</button>
+      </React.Fragment>
     )}
   }
 
